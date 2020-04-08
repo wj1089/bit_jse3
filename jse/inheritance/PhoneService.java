@@ -1,13 +1,26 @@
 package com.jse.inheritance;
 
 public class PhoneService {
+	
 	private Phone[] phones;
+	private CelPhone[] celPhones;
 	private int count;
 	
+	
 	public PhoneService() {
-		phones = new Phone[2];
+		phones = new Phone[3];
+		celPhones = new CelPhone[3];
+		count = 0;
 	}
 	
+	public CelPhone[] getCelPhones() {
+		return celPhones;
+	}
+
+	public void setCelPhones(CelPhone[] celPhones) {
+		this.celPhones = celPhones;
+	}
+
 	public Phone[] getPhones() {
 		return phones;
 	}
@@ -26,5 +39,8 @@ public class PhoneService {
 		phones[count] = phone;
 		count++;
 	}
-	
+	public void celPhonAdd(Phone Phone) {
+		celPhones[count] = Phone;
+		count++;
+	}
 }

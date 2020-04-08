@@ -4,11 +4,11 @@ public class CelPhone extends Phone{
 	
 	private boolean portable;    //portable = 휴대성인지 아닌지?
 	private String move;
-	
 
 	public CelPhone(String phoneNumber, String name, String company, boolean portable) {
 		super(phoneNumber, name, company);
-		this.portable = portable;
+//		this.portable = portable;//boolean으로 하면 결국this는 필요없다.
+		setPortable(portable);
 	}
 	
 	public boolean isPortable() {//boolean 타입만 is를 쓰인다!!
