@@ -4,15 +4,35 @@ public class PhoneService {
 	
 	private Phone[] phones;
 	private CelPhone[] celPhones;
+	private Iphone[] iphones;
 	private int count;
+	private GalaxyNote[] galaxyNotes;
 	
 	
 	public PhoneService() {
 		phones = new Phone[3];
 		celPhones = new CelPhone[3];
 		count = 0;
+		iphones = new Iphone[3];
+		galaxyNotes = new GalaxyNote[3];
 	}
 	
+	public GalaxyNote[] getGalaxyNotes() {
+		return galaxyNotes;
+	}
+
+	public void setGalaxyNotes(GalaxyNote[] galaxyNotes) {
+		this.galaxyNotes = galaxyNotes;
+	}
+
+	public Iphone[] getIphones() {
+		return iphones;
+	}
+
+	public void setIphones(Iphone[] iphones) {
+		this.iphones = iphones;
+	}
+
 	public CelPhone[] getCelPhones() {
 		return celPhones;
 	}
@@ -35,12 +55,21 @@ public class PhoneService {
 	public int getCount() {
 		return count;
 	}
-	public void add(Phone phone) {
+	//이런걸 오버로딩이라한다.
+	public void add(Phone phone) {//add를 전부 하나로 통일할수있다!
 		phones[count] = phone;
 		count++;
 	}
-	public void celPhonAdd(Phone Phone) {
+	public void add(CelPhone Phone) {//celPhoneAdd
 		celPhones[count] = Phone;
+		count++;
+	}
+	public void add(Iphone Iphone) {//iphoneAdd
+		iphones[count] = Iphone;
+		count++;
+	}
+	public void add(GalaxyNote GalaxyNote) {//galaxyNoteAdd
+		galaxyNotes[count] = GalaxyNote;
 		count++;
 	}
 }
