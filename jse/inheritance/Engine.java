@@ -33,7 +33,7 @@ public class Engine {
 					Phone[] phones = service.getPhones();
 					String message = "";
 					for(int i=0;i<3;i++) {
-						message += String.format("귀하께서 입력하신 정보는(전화번호,이름,회사) : %s, %s, %s 입니다.\n",
+						message += String.format("귀하께서 입력하신 정보는(전화번호,이름,회사) :\n %s\n, %s\n, %s\n 입니다.",
 								phones[i].getPhoneNumber(),
 								phones[i].getName(), 
 								phones[i].getCompany());
@@ -82,8 +82,6 @@ public class Engine {
 					String[] values = JOptionPane.showInputDialog(" 제품이름 , 이름  , 회사, 휴대가능유무, 검색가능유무, 사이즈").split(",");
 					service.add(new GalaxyNote(values[0],values[1],values[2],true,values[4],values[5]));//결국은 위에있는 case1에서 복사해서 "new 뒤"와"true"만 조정하면됨.
 				}
-				
-				
 			break;	
 			case "8":
 				GalaxyNote[] galaxyNotes = service.getGalaxyNotes();

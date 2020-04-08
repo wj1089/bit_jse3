@@ -60,16 +60,16 @@ public class PhoneService {
 		phones[count] = phone;
 		count++;
 	}
-	public void add(CelPhone Phone) {//celPhoneAdd
-		celPhones[count] = Phone;
+	public void add(CelPhone phone) {//celPhoneAdd
+		celPhones[count] = phone;
 		count++;
 	}
 	public void add(Iphone Iphone) {//iphoneAdd
 		iphones[count] = Iphone;
 		count++;
 	}
-	public void add(GalaxyNote GalaxyNote) {//galaxyNoteAdd
-		galaxyNotes[count] = GalaxyNote;
+	public void add(GalaxyNote galaxyNote) {//galaxyNoteAdd
+		galaxyNotes[count] = galaxyNote;
 		count++;
 	}
 }
