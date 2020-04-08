@@ -6,11 +6,9 @@ public class CardBean {
 	private int number;
 	
 	public CardBean(String kind, int number) {
-		this.kind=kind;
+		this.kind = kind;
 		this.number = number;
-		
 	}
-	
 	
 	public void setKind(String kind) {
 		this.kind=kind;

@@ -18,15 +18,15 @@ import java.util.Scanner;
 				case 1: System.out.println("성적표");
 						for(int i=0;i<3;i++) {
 						gradeService.add(
-							new GradeBean(
+							gradeService.setGrades(new GradeBean(
 									scanner.next(),
 									scanner.nextInt(),
 									scanner.nextInt(),
 									scanner.nextInt(),
-									scanner.nextInt()));
+									scanner.nextInt())));
 									}
 						
-						gradeService.setGrades(grades);
+//						(grades);
 				break;
 				
 				
