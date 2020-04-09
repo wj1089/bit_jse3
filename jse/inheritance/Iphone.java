@@ -18,7 +18,9 @@ public class Iphone extends CelPhone{
 	public void setSearch(String search) {
 		this.search = search;
 	}
-
-
+	@Override
+	public String toString() {
+		return super.toString() + ",search = "+search;
+	}
 	
 }

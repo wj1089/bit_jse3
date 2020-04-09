@@ -11,8 +11,6 @@ public class Phone {
 		this.name=name;
 		this.company=company;
 	}
-	
-	
 	public void setPhoneNumber(String phoneNumber) {
 		this.phoneNumber=phoneNumber;
 	}
@@ -32,6 +30,12 @@ public class Phone {
 	}
 	public String getCompany() {
 		return company;
+	}
+
+
+	@Override//(an notation)
+	public String toString() {
+		return "Phone : phoneNumber=" + phoneNumber + ", name=" + name + ", company=" + company ;
 	}
 	
 }
